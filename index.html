@@ -285,21 +285,23 @@
         text-align: center;
       }
       footer ul {
-        list-style: none;
+        list-style: none; /* Remove default list styling */
         padding: 0;
         margin: 10px 0 0;
+        text-align: center; /* Center-align the list */
         display: flex;
         justify-content: center;
         gap: 15px;
+      }
+      footer ul li {
+        font-size: 0.8rem; /* Further reduce font size for non-link items */
+        margin-bottom: 5px; /* Add spacing between list items */
       }
       footer ul li a {
         color: #ffffff;
         text-decoration: none;
         font-weight: normal; /* Unbold the text */
         font-size: 0.8rem; /* Further reduce font size */
-      }
-      footer ul li {
-        font-size: 0.8rem; /* Further reduce font size for non-link items */
       }
       footer ul li a:hover {
         text-decoration: underline;
