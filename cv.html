@@ -40,6 +40,7 @@
       }
       .section {
         margin-bottom: 20px;
+        text-align: justify; /* Justify text in all sections */
       }
       .section h2 {
         margin-bottom: 10px;
@@ -47,6 +48,9 @@
         border-bottom: 2px solid #007bff;
         display: inline-block;
         padding-bottom: 5px;
+      }
+      .section h2 + p {
+        text-align: justify; /* Justify paragraphs under h2 */
       }
       ul {
         padding-left: 20px;
@@ -57,6 +61,33 @@
         padding: 20px;
         text-align: center;
       }
+      footer ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: normal; /* Unbold the text */
+        font-size: 0.9rem; /* Reduced font size */
+      }
+      footer ul li {
+        font-size: 0.9rem; /* Reduced font size for non-link items */
+      }
+      @media (max-width: 480px) {
+        footer ul li a {
+          font-size: 0.8rem; /* Further reduce font size for very small screens */
+        }
+        footer ul li {
+          font-size: 0.8rem; /* Further reduce font size for non-link items */
+        }
+      }
+      h1 + p {
+        margin-top: 5px; /* Reduce spacing between h1 and the first paragraph */
+      }
+      p + p {
+        margin-top: 5px; /* Reduce spacing between consecutive paragraphs */
+      }
+      h1 + p,
+      h2 + p {
+        text-align: center; /* Center align paragraphs under h1 and h2 */
+      }
     </style>
     <script
       src="https://kit.fontawesome.com/a076d05399.js"
@@ -66,11 +97,13 @@
   <body>
     <div class="container">
       <h1>Felix Okeyo</h1>
-      <p>Finance and Tech Enthusiast | Full-Stack Developer | AI Innovator</p>
-
+      <p>
+        Finance and Administration | Data Analyst | Full-Stack Developer | AI
+        Innovator
+      </p>
       <div class="section">
         <h2>Contact Information</h2>
-        <p>Email: sahihi.services@gmail.com</p>
+        <p>Email: felix.okeyo254@gmail.com</p>
         <p>
           LinkedIn:
           <a href="https://linkedin.com/in/felix-okeyo/" target="_blank"
@@ -79,32 +112,396 @@
         </p>
         <p>
           GitHub:
-          <a href="https://github.com/your-profile" target="_blank"
+          <a href="https://github.com/felixokeyo" target="_blank"
             >github.com/your-profile</a
           >
         </p>
+        <p>Location: Nairobi, Kenya</p>
+      </div>
+
+      <div class="section">
+        <h2>Profile Summary</h2>
+        <p>
+          Multidisciplinary Finance and Accounting expert with a dynamic
+          transition into tech—blending extensive experience in financial
+          operations, tax compliance, and audit readiness with emerging skills
+          in full-stack development, data analysis, and AI-powered financial,
+          risk and fraud management. Proven track record in donor-funded
+          projects, commercial enterprises, and international organizations,
+          consistently delivering process efficiency, cost optimization, and
+          regulatory adherence.
+        </p>
+        <p>
+          Highly skilled in tools like QuickBooks, iTax, and ERP systems, now
+          complemented by a growing tech stack that includes front-end
+          development, data analytics, and machine learning. Strong foundation
+          in financial reporting, reconciliations, payroll, and statutory
+          compliance, with added strengths in automation, predictive analysis,
+          and intelligent fraud monitoring systems.
+        </p>
+        <p>
+          Strategically positioned to bridge traditional finance and modern
+          technology—leveraging a proactive, analytical mindset and meticulous
+          attention to detail to drive smarter decision-making, optimize
+          workflows, and innovate compliance solutions. Passionate about using
+          tech to enhance transparency, mitigate risks, and shape the future of
+          financial operations.
+        </p>
+      </div>
+
+      <div class="section">
+        <h2>Experience</h2>
+        <p>
+          <strong
+            >INDEPENDENT CONSULTANT (Finance and General Administration)</strong
+          >
+          (June 2024 to date)
+        </p>
+        <p>
+          Independent finance and administration consultant providing expertise
+          in bookkeeping, accounting, taxation, financial strategy, and general
+          administrative support to diverse organizations, ensuring compliance,
+          financial accuracy, and operational efficiency.
+        </p>
+        <ul>
+          <li>
+            <strong>Weban (K) Limited:</strong> Manage financial operations,
+            including bookkeeping, financial reporting, tax compliance, and
+            budgeting for engineering projects, while improving internal
+            controls and process efficiency.
+          </li>
+          <li>
+            <strong>Child Destiny Foundation:</strong> Ensuring accurate
+            accounting of donor funds, compliance with non-profit financial
+            regulations, resource management, and preparation of reports for
+            donors and audits.
+          </li>
+          <li>
+            <strong>Peace Actors Forum (PAFO):</strong> Development of a finance
+            policy manual, design and implementation of a functional finance
+            system, which includes installing and setting up QuickBooks
+            accounting software.
+          </li>
+          <li>
+            <strong>Panam Cargonet Limited:</strong> Overseeing proper financial
+            record-keeping, tax filings, and ensuring compliance.
+          </li>
+        </ul>
+
+        <p><strong>FINANCE OFFICER: RAESA</strong> (March 2023 to May 2024)</p>
+        <p>
+          As the Finance and Administration Professional at RAESA Group, a
+          multinational company with operations spanning Europe, South America,
+          and Africa, I was pivotal in managing financial operations for the
+          Rwabura Irrigation Project in Gatundu South, Kenya. My contributions
+          were instrumental in maintaining financial accuracy, ensuring
+          compliance, and optimizing processes to enhance operational
+          efficiency.
+        </p>
+        <ul>
+          <li>
+            Ensure all payment transactions are accurately documented, approved,
+            and posted in the accounting system while adhering to company
+            policies and monthly closing procedures.
+          </li>
+          <li>
+            Oversee procurement processes, including vendor selection and
+            contract negotiation, while ensuring compliance with organizational
+            policies and budgetary guidelines.
+          </li>
+          <li>
+            Reconcile vendor accounts, process supplier invoices, and ensure
+            timely settlement of accounts per contractual terms.
+          </li>
+          <li>
+            Administer payroll processes and statutory filings, ensuring timely
+            and accurate disbursements while maintaining compliance with tax and
+            labour regulations.
+          </li>
+          <li>
+            Prepare and file accurate VAT returns via KRA online platforms,
+            manage VAT-exempt transaction applications, and handle associated
+            paperwork.
+          </li>
+          <li>
+            Prepare detailed monthly financial reports and budgets, ensuring
+            proper cost allocations and accurate billing combinations.
+          </li>
+          <li>
+            Complete monthly bank reconciliations, identifying and resolving
+            discrepancies efficiently.
+          </li>
+          <li>
+            Support annual external audits by ensuring all required
+            documentation is readily available.
+          </li>
+          <li>
+            Maintain a comprehensive electronic and paper-based financial filing
+            system, ensuring accessibility and adherence to document retention
+            policies.
+          </li>
+          <li>
+            Maintain a comprehensive asset register, conduct periodic
+            verifications, and ensure accurate record-keeping.
+          </li>
+        </ul>
+
+        <p>
+          <strong
+            >ACCOUNTANT: Octagon Builders and General Suppliers Limited</strong
+          >
+          (Jan 2016 to Jan 2023)
+        </p>
+        <p>
+          Construction Services in Water, Sanitation, and Infrastructure
+          Projects
+        </p>
+        <ul>
+          <li>
+            Facilitated procurement processes by preparing RFQs, analyzing
+            quotations, ensuring budget availability, and advising the
+            procurement committee on supplier selection.
+          </li>
+          <li>
+            Reconciled and processed supplier invoices, managed accounts
+            payable, and ensured timely payments per contractual terms.
+          </li>
+          <li>
+            Reviewed and verified payment documentation for accuracy before
+            processing and posting in the accounting system.
+          </li>
+          <li>
+            Maintained an organized, up-to-date financial filing system for easy
+            access to financial documents.
+          </li>
+          <li>
+            Developed and managed budgets, identified variances, and provided
+            actionable recommendations.
+          </li>
+          <li>
+            Verified staff and contractor advance liquidations for accuracy and
+            completeness.
+          </li>
+          <li>
+            Maintained and updated the asset register, tracked assets, and
+            ensured regular verification for accurate financial reporting.
+          </li>
+          <li>
+            Prepared financial reports on project cost performance, cash flow
+            forecasts, and alignment with budgets.
+          </li>
+          <li>
+            Oversaw monthly and year-end financial closings, ensuring accurate
+            recording of transactions, journal entries, accruals, and
+            reconciliations within deadlines.
+          </li>
+          <li>
+            Supported audit processes by preparing documentation and addressing
+            audit queries promptly.
+          </li>
+          <li>
+            Provided financial management guidance to non-finance staff on
+            budgeting, compliance, and best practices.
+          </li>
+        </ul>
+
+        <p>
+          <strong>FINANCE/ADMIN OFFICER: Child Destiny Foundation (CDF)</strong>
+          (Feb 2014 to Dec 2016)
+        </p>
+        <p>
+          Child Destiny Foundation, a Kenyan registered foundation with a sister
+          organization in Austria, is dedicated to enhancing the lives of
+          children with disabilities and supporting their parents, particularly
+          single mothers, in the slums of Kibera, Kenya.
+        </p>
+        <ul>
+          <li>
+            Develop and manage project budgets, closely monitoring actual
+            expenses against budget forecasts to identify and address variances.
+          </li>
+          <li>
+            Ensure that all financial transactions are adequately documented and
+            accurately recorded in the QuickBooks accounting system, maintaining
+            transparency and accuracy.
+          </li>
+          <li>
+            Prepare and process monthly bank reconciliations for all CDF bank
+            accounts.
+          </li>
+          <li>
+            Prepare periodic financial reports and respond to ad-hoc reporting
+            requests, ensuring that financial information is accurate and timely
+            for decision-making.
+          </li>
+          <li>Organize and maintain a comprehensive filing system.</li>
+          <li>
+            Facilitate the procurement process for project goods and services.
+          </li>
+          <li>
+            Maintain an up-to-date asset register, ensuring periodic
+            verification of assets.
+          </li>
+          <li>
+            Contribute to the organization's strategic planning by providing
+            in-depth financial analysis, offering actionable insights, and
+            making sound recommendations to improve financial performance.
+          </li>
+          <li>
+            Assist in identifying potential donors, developing fundraising
+            strategies, and preparing fundraising reports to support the
+            organization's funding initiatives.
+          </li>
+          <li>
+            Support external audit coordination by preparing relevant audit
+            schedules and documentation.
+          </li>
+          <li>
+            Maintain primary relationships with donors and handle all
+            communications regarding budgets and donor financial reports,
+            ensuring alignment with donor requirements and expectations.
+          </li>
+        </ul>
+
+        <p>
+          <strong>ACCOUNTANT: Mombasa Community-Based Health Care</strong> (July
+          2012 to Jan 2014)
+        </p>
+        <ul>
+          <li>
+            Recorded and approved financial transactions in compliance with
+            organizational policies.
+          </li>
+          <li>
+            Managed budgets, ensuring accurate cost allocations, billing, and
+            financial integrity.
+          </li>
+          <li>
+            Reviewed project ledgers monthly for accuracy and alignment with
+            budgets and program objectives.
+          </li>
+          <li>
+            Processed imprest requests, monitored staff advances, and ensured
+            timely returns with appropriate documentation.
+          </li>
+          <li>
+            Administered payroll processing and statutory deductions (NSSF,
+            NHIF, NITA, PAYE) for compliance.
+          </li>
+          <li>
+            Ensured adherence to donor financial regulations, providing timely
+            reports, documentation, and audit support.
+          </li>
+          <li>
+            Provided financial guidance to non-finance staff, promoting
+            understanding of protocols.
+          </li>
+          <li>
+            Maintained organized financial records and conducted asset
+            verification to safeguard resources.
+          </li>
+          <li>
+            Managed financial correspondences to support operations and maintain
+            communication efficiency.
+          </li>
+        </ul>
+
+        <p>
+          <strong
+            >ACCOUNTANT/ ADMINISTRATION OFFICER: Riruta Health Project</strong
+          >
+          (Oct 2008 to Dec 2011)
+        </p>
+        <ul>
+          <li>
+            Ensured accurate documentation, approval, and posting of financial
+            transactions with correct donor and ledger allocations.
+          </li>
+          <li>
+            Maintained comprehensive physical and digital financial records for
+            accessibility and compliance.
+          </li>
+          <li>
+            Prepared financial reports for donor-funded projects, including
+            Pathfinder International operations, ensuring adherence to donor
+            guidelines.
+          </li>
+          <li>
+            Managed accounts payable, invoice reconciliations, and timely vendor
+            payments.
+          </li>
+          <li>
+            Oversaw petty cash management and ensured efficient day-to-day
+            operations.
+          </li>
+          <li>
+            Administered sub-grants, ensuring compliance, financial monitoring,
+            and accountability for sub-grantees.
+          </li>
+          <li>
+            Strengthened internal controls to uphold financial policies and
+            donor regulations.
+          </li>
+          <li>
+            Ensured compliance with tax regulations, including processing DA1
+            forms and statutory requirements.
+          </li>
+          <li>
+            Managed office operations cost-effectively, including supplies and
+            facilities.
+          </li>
+          <li>
+            Supported budget monitoring, audit preparations, and alignment of
+            expenditures with project goals.
+          </li>
+        </ul>
+
+        <p>
+          <strong>KARDS DEVELOPMENT CONSULTANTS</strong> (Oct 2005 to Sept 2008)
+        </p>
+        <p>A consultancy focused on human development.</p>
+        <ul>
+          <li>
+            <strong>Finance & Administrative Management:</strong> Managed
+            accounting operations to ensure financial accuracy through
+            reconciliations, audit coordination, and comprehensive reporting.
+            Oversaw budgets, cost control, and financial reporting for senior
+            management.
+          </li>
+          <li>
+            <strong>Procurement & Grants Management:</strong> Managed
+            procurement processes and ensured compliance with grant financial
+            requirements.
+          </li>
+          <li>
+            <strong>Project Oversight:</strong> Managed financial and
+            administrative aspects of key projects, including the Commercial
+            Sexual Exploitation and Human Trafficking Study and the Directory of
+            Projects for Street Children in Nairobi.
+          </li>
+          <li>
+            <strong>Efficiency & Compliance:</strong> Streamlined administrative
+            procedures, maintained financial records, and supported
+            organizational strategy alignment for optimal performance and donor
+            relations.
+          </li>
+        </ul>
       </div>
 
       <div class="section">
         <h2>Education</h2>
         <ul>
+          <li>Bachelor of Commerce (Finance) - [KCA University]</li>
           <li>
-            Bachelor's Degree in Finance and Accounting - [Your University]
-          </li>
-          <li>Certification in Full-Stack Development - [Institution]</li>
-        </ul>
-      </div>
-
-      <div class="section">
-        <h2>Experience</h2>
-        <ul>
-          <li>
-            Finance and Administration Professional with 5+ years of experience
-            in financial operations and risk management.
+            Certified Public Accountant (Section V) - [Kenya Accountancy and
+            Secretaries National Examinations (KASNEB)]
           </li>
           <li>
-            Developed AI-powered tools for financial fraud detection and risk
-            analysis.
+            Accounting Technicians Certificate (ATC Finalist) - [Kenya
+            Accountancy and Secretaries National Examinations (KASNEB)]
+          </li>
+          <li>
+            Certification in Full-Stack Development - [Power Learn Project]
           </li>
         </ul>
       </div>

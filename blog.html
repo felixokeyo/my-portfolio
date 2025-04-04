@@ -23,6 +23,10 @@
         margin-bottom: 10px; /* Reduced margin */
         font-size: 1.8rem; /* Reduced font size */
       }
+      h1,
+      h2 {
+        text-align: center; /* Center align h1 and h2 */
+      }
       .container {
         max-width: 800px;
         margin: 0 auto;
@@ -48,6 +52,27 @@
         color: #ffffff; /* Ensure text is readable */
         padding: 20px;
         text-align: center;
+      }
+      footer ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: normal; /* Unbold the text */
+        font-size: 0.9rem; /* Reduced font size */
+      }
+      footer ul li {
+        font-size: 0.9rem; /* Reduced font size for non-link items */
+      }
+      @media (max-width: 480px) {
+        footer ul li a {
+          font-size: 0.8rem; /* Further reduce font size for very small screens */
+        }
+        footer ul li {
+          font-size: 0.8rem; /* Further reduce font size for non-link items */
+        }
+      }
+      h1 + p,
+      h2 + p {
+        text-align: center; /* Center align paragraphs under h1 and h2 */
       }
     </style>
     <script
