@@ -13,6 +13,8 @@
     <style>
       body {
         font-family: "Roboto", sans-serif;
+        font-size: 15px; /* Reduced font size for better readability */
+        line-height: 1.6; /* Maintain good line spacing */
       }
       h2,
       h3 {
@@ -21,14 +23,14 @@
       #projects .container {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 20px;
-        padding: 20px;
+        gap: 15px; /* Reduced gap for a tighter layout */
+        padding: 10px; /* Reduced padding for a proportional size */
       }
       .project-card {
         text-align: center;
         background: #ffffff;
         border-radius: 12px;
-        padding: 20px;
+        padding: 10px; /* Reduced padding inside project cards */
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         overflow: hidden;
@@ -49,8 +51,8 @@
         transform: scale(1.1);
       }
       .project-card h3 {
-        font-size: 1.4rem;
-        margin-bottom: 10px;
+        font-size: 1.2rem; /* Reduced font size */
+        margin-bottom: 8px; /* Reduced margin */
         color: #333;
       }
       .project-card p {
@@ -81,20 +83,20 @@
       h2 {
         text-align: center;
         font-family: "Montserrat", sans-serif;
-        font-size: 2rem;
+        font-size: 1.5rem; /* Reduced font size */
         font-weight: 700;
         color: #333;
-        margin-bottom: 20px;
+        margin-bottom: 12px; /* Reduced margin */
         text-transform: uppercase;
         letter-spacing: 1.5px;
       }
       h3 {
         text-align: center;
         font-family: "Montserrat", sans-serif;
-        font-size: 1.5rem;
+        font-size: 1.2rem; /* Reduced font size */
         font-weight: 600;
         color: #444;
-        margin-bottom: 10px;
+        margin-bottom: 8px; /* Reduced margin */
       }
       #education h2 {
         color: #ffffff; /* Set heading color to white */
@@ -111,12 +113,12 @@
         color: #ffffff;
         background: url("images/Banner_background.jpg") no-repeat center
           center/cover;
-        padding: 80px 20px; /* Reduced padding */
+        padding: 60px 15px; /* Reduced padding */
       }
       #hero h1 {
-        font-size: 2.5rem; /* Reduced font size */
+        font-size: 2rem; /* Reduced font size */
         font-weight: 700;
-        margin-bottom: 10px;
+        margin-bottom: 8px; /* Reduced margin */
         text-transform: uppercase;
         letter-spacing: 1.5px;
       }
@@ -133,6 +135,10 @@
         border-radius: 5px;
         font-weight: 600;
         font-size: 0.9rem; /* Reduced font size */
+        margin: 5px; /* Add spacing between buttons */
+      }
+      #hero .btn:hover {
+        background-color: #0056b3;
       }
       .cv-button {
         display: inline-block;
@@ -160,7 +166,179 @@
       .project-card:last-child {
         margin: 0 auto; /* Center the last project card */
       }
+      #skills {
+        padding: 15px; /* Reduced padding */
+        background-color: #494646;
+      }
+      #skills h2 {
+        color: white; /* Set heading color to white */
+        margin-bottom: 15px; /* Reduced margin */
+      }
+      .skills-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center; /* Center the skills sections */
+        gap: 15px; /* Reduced gap */
+      }
+      .skills-section {
+        flex: 1 1 calc(40% - 15px); /* Adjusted size for better centering */
+        background: maroon;
+        border-radius: 12px;
+        padding: 15px; /* Reduced padding */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        color: #ffffff;
+        text-align: center; /* Center text inside each section */
+      }
+      .skills-section h3 {
+        font-size: 1.3rem; /* Reduced font size */
+        margin-bottom: 10px;
+        color: #000000;
+      }
+      .skills-section ul {
+        list-style: none;
+        padding: 0;
+        text-align: left; /* Align list items to the left for readability */
+        margin: 0 auto;
+        max-width: 200px; /* Limit width for better centering */
+      }
+      .skills-section ul li {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        font-size: 0.9rem; /* Reduced font size */
+        color: #ffffff; /* Ensure list items are white */
+      }
+      .skills-section ul li i {
+        color: #007bff; /* Change icon color to blue */
+        margin-right: 10px;
+        font-size: 1.2rem;
+      }
+      @media (max-width: 768px) {
+        .skills-container {
+          flex-direction: column; /* Stack sections vertically on smaller screens */
+        }
+        .skills-section {
+          flex: 1 1 100%; /* Make sections take full width */
+        }
+      }
+      #interests {
+        padding: 15px; /* Reduced padding */
+        background-color: #ffffff;
+      }
+      #interests h2 {
+        color: #333;
+        margin-bottom: 15px;
+        text-align: center;
+      }
+      #interests p {
+        font-size: 1rem;
+        color: #555;
+        text-align: center;
+        line-height: 1.6;
+      }
+      nav {
+        display: none;
+      }
+      @media (max-width: 768px) {
+        nav {
+          top: 10px;
+          right: 10px;
+          flex-direction: column; /* Stack links vertically on smaller screens */
+          align-items: flex-start;
+          gap: 10px;
+        }
+        nav a {
+          font-size: 1rem; /* Slightly larger font for smaller screens */
+        }
+      }
+      #contact {
+        padding: 15px; /* Reduced padding */
+      }
+      #contact p {
+        text-align: center; /* Center the paragraph text */
+        margin-bottom: 20px; /* Add spacing below the paragraph */
+      }
+      #contact form {
+        text-align: center; /* Center the form elements */
+      }
+      #contact form label {
+        display: block;
+        margin: 10px 0 5px; /* Add spacing between labels and inputs */
+      }
+      #contact form input,
+      #contact form textarea {
+        width: 80%; /* Adjust input and textarea width */
+        max-width: 400px; /* Limit maximum width */
+        margin: 0 auto 15px; /* Center and add spacing below */
+        display: block;
+      }
+      footer {
+        background-color: #800000; /* Dark maroon */
+        color: #ffffff; /* Ensure text is readable */
+        padding: 20px;
+        text-align: center;
+      }
+      footer ul {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0 0;
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+      }
+      footer ul li a {
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 600;
+      }
+      footer ul li a:hover {
+        text-decoration: underline;
+      }
+      #hero .hero-content {
+        position: relative;
+        z-index: 2;
+      }
+      #hero .hero-image {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 4px solid #ffffff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        object-fit: cover;
+      }
+      h1 {
+        font-size: 2rem; /* Reduced font size */
+        margin-bottom: 8px; /* Reduced margin */
+      }
+      h2 {
+        font-size: 1.5rem; /* Reduced font size */
+        margin-bottom: 12px; /* Reduced margin */
+      }
+      h3 {
+        font-size: 1.2rem; /* Reduced font size */
+        margin-bottom: 8px; /* Reduced margin */
+      }
+      #hero {
+        padding: 60px 15px; /* Reduced padding */
+      }
+      #skills,
+      #interests,
+      #projects,
+      #education,
+      #contact {
+        padding: 15px; /* Reduced padding for sections */
+      }
+      .project-card {
+        padding: 10px; /* Reduced padding inside project cards */
+      }
     </style>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- Hero Section -->
@@ -172,7 +350,10 @@
           Risk Management
         </p>
         <a href="#projects" class="btn">View My Work</a>
+        <a href="#contact" class="btn">Contact Me</a>
+        <a href="blog.html" class="btn" target="_blank">My Blog</a>
       </div>
+      <img src="images/my_photo.jpg" alt="Your Photo" class="hero-image" />
     </header>
 
     <!-- About Me Section -->
@@ -186,14 +367,18 @@
         <div class="text">
           <h2>About Me</h2>
           <p>
-            Hi, I'm Felix Okeyo- a Finance and Administration Professional
-            transitioning into tech with a focus on full-stack development, data
-            analysis, and AI-powered financial and risk management. <br />
-            With a solid foundation in financial operations and risk management,
-            I harness emerging technologies to develop innovation, data-driven
-            solutions that enhance security and mitigate risks.<br />
+            Hi, I'm Felix Okeyo- a Finance and Administration Professional now
+            building data-driven, AI-powered solutions for financial, risk and
+            fraud management.<br />
+            With extensive experience in financial operations, compliance, and
+            audit facilitation, I'm transitioning into tech to reimagine
+            financial systems through full-stack development, data analysis and
+            Machine Learning. Harnessing emerging technologies towards driving
+            innovation and data-driven solutions that enhance security and
+            mitigate risks.<br />
             I'm currently deepening my expertise in full-stack development,
-            Machine Learning and AI to transform financial management.
+            Machine Learning and AI to contribute in transforming the finance
+            sector.
           </p>
         </div>
       </div>
@@ -213,9 +398,69 @@
           learning, with a focus on AI-driven financial risk detection and fraud
           management, blending my finance background with cutting-edge
           technology to deliver innovative, data-driven solutions.
-          <a href="assets/Felix Okeyo_CV.pdf" target="_blank" class="cv-button"
-            >View My CV</a
-          >
+          <a href="auth.html" class="cv-button">View My CV</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills & Expertise Section -->
+    <section id="skills">
+      <div class="container">
+        <h2>My Skills & Expertise</h2>
+        <div class="skills-container">
+          <div class="skills-section">
+            <h3>Technical Skills</h3>
+            <ul>
+              <li><i class="fas fa-code"></i> HTML</li>
+              <li><i class="fas fa-code"></i> CSS</li>
+              <li><i class="fas fa-code"></i> JavaScript</li>
+              <li><i class="fas fa-database"></i> Python</li>
+              <li><i class="fas fa-database"></i> SQL</li>
+              <li><i class="fas fa-brain"></i> Artificial Intelligence</li>
+              <li><i class="fas fa-robot"></i> Machine Learning</li>
+            </ul>
+          </div>
+          <div class="skills-section">
+            <h3>Professional Skills</h3>
+            <ul>
+              <li><i class="fas fa-chart-line"></i> Financial Management</li>
+              <li><i class="fas fa-cogs"></i> Process Optimization</li>
+              <li><i class="fas fa-shield-alt"></i> QuickBooks and ERP</li>
+              <li><i class="fas fa-file-alt"></i> Documentation</li>
+              <li><i class="fas fa-comments"></i> Client Communication</li>
+              <li><i class="fas fa-shield-alt"></i> Risk Management</li>
+              <li><i class="fas fa-chart-pie"></i> Data Analysis</li>
+              <li><i class="fas fa-chart-bar"></i> Report writing</li>
+              <li><i class="fas fa-users"></i> Team Collaboration</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interests Section -->
+    <section id="interests">
+      <div class="container">
+        <h2>My Interests</h2>
+        <p>
+          I’m endlessly curious—especially where numbers, systems, and
+          creativity collide to reveal patterns, meaning, and possibility. I’m
+          passionate about finance, technology, and the powerful synergy they
+          offer in solving real-world problems. <br />Currently, I’m diving into
+          full-stack development, data analysis and machine learning, with a
+          long-term vision of building tech-driven financial solutions that are
+          both innovative and impactful. <br /><br />
+          Beyond the screen and spreadsheets, I’ve rekindled a childhood spark
+          for drawing and painting. It’s a humbling and nostalgic path of
+          self-discovery—where imagination meets skill (and the occasional
+          delightfully messy sketch). I’m also a firm believer in human
+          resilience, lifelong learning, and creating a life that feels just as
+          fulfilling, as it looks on screen, paper, and deep within.
+          <br /><br />
+          And when the world slows down just enough, I drift into a different
+          kind of rhythm—casual football, open skies, and lake/ocean breeze.
+          <br />Sweet, sandy, sunny, and lazy Diani Beach is the current star of
+          my daydream!
         </p>
       </div>
     </section>
@@ -275,6 +520,12 @@
     <section id="contact">
       <div class="container">
         <h2>Contact Me</h2>
+        <p>
+          Let's innovate together.<br />
+          If you have a project, collaboration idea, or simply want to connect,
+          I'm eager to hear about it. <br />Reach out and let's explore the
+          possibilities.
+        </p>
         <form action="#" method="POST">
           <label for="name">Your Name</label>
           <input type="text" id="name" name="name" required />
@@ -296,16 +547,30 @@
         <p>© 2025 [Felix Okeyo]. All rights reserved.</p>
         <ul>
           <li>
-            <a href="https://linkedin.com/in/felix-okeyo/" target="_blank"
-              >LinkedIn</a
-            >
+            <a href="https://linkedin.com/in/felix-okeyo/" target="_blank">
+              <i class="fab fa-linkedin"></i> LinkedIn
+            </a>
           </li>
           <li>
-            <a href="https://github.com/your-profile" target="_blank">GitHub</a>
+            <a href="https://github.com/felixokeyo" target="_blank">
+              <i class="fab fa-github"></i> GitHub
+            </a>
           </li>
-          <li><a href="sahihi.services@gmail.com">Email</a></li>
+          <li>
+            <a href="mailto:felix.okeyo254@gmail.com">
+              <i class="fas fa-envelope"></i> felix.okeyo254@gmail.com
+            </a>
+          </li>
+          <li><i class="fas fa-phone"></i> +254 724 344344</li>
+          <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
         </ul>
       </div>
     </footer>
+
+    <!-- Add Font Awesome for icons -->
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
