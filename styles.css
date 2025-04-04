@@ -1,0 +1,190 @@
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #1A1A1A;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+/* Hero Section */
+#hero {
+    background-color: #003366;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+#hero h1 {
+    font-size: 1.5em;
+}
+
+#hero p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+#hero .btn {
+    background-color: #9E2A2B;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+#hero .btn:hover {
+    background-color: #B24D3A;
+}
+
+/* About Section */
+#about {
+    background-color: #fff;
+    color: #003366;
+    padding: 20px 0;
+}
+
+#about .profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+#about .text {
+    display: inline-block;
+    max-width: 700px;
+    margin-top: 10px;
+}
+
+#about h2 {
+    margin-bottom: 20px;
+}
+
+/* Shared Section Styles */
+section {
+    padding: 60px 0;
+}
+
+section h2 {
+    margin-bottom: 20px;
+}
+
+/* Projects Section */
+#projects {
+    background-color: #003366;
+}
+
+#projects .project-card {
+    background-color: #333;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#projects h3 {
+    color: #9E2A2B;
+    margin-bottom: 15px;
+}
+
+#projects a {
+    color: #fff;
+    background-color: #9E2A2B;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#projects a:hover {
+    background-color: #B24D3A;
+}
+
+/* Call to Action Section */
+#cta {
+    background-color: #9E2A2B;
+    text-align: center;
+}
+
+#cta .btn {
+    background-color: #003366;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+#cta .btn:hover {
+    background-color: #B24D3A;
+}
+
+/* Contact Form Section */
+#contact {
+    background-color: #1A1A1A;
+    color: #fff;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #333;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #444;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+}
+
+#contact button {
+    background-color: #9E2A2B;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+#contact button:hover {
+    background-color: #B24D3A;
+}
+
+/* Footer Section */
+footer {
+    background-color: #003366;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+footer ul li a {
+    color: #fff;
+}
