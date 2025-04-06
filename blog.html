@@ -3,131 +3,522 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Blog</title>
+    <title>Felix Okeyo | Blog</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="blog.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <style>
-      body {
-        font-family: "Roboto", sans-serif;
-        font-size: 15px; /* Reduced font size for better readability */
-        line-height: 1.6;
-        margin: 20px;
-        padding: 0;
-        color: #333;
-      }
-      h1 {
-        text-align: center;
-        color: #007bff;
-        margin-bottom: 10px; /* Reduced margin */
-        font-size: 1.8rem; /* Reduced font size */
-      }
-      h1,
-      h2 {
-        text-align: center; /* Center align h1 and h2 */
-      }
-      .container {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 15px; /* Reduced padding */
-        border: 1px solid #ddd;
-        border-radius: 8px;
-        background: #f9f9f9;
-      }
-      .post {
-        margin-bottom: 20px;
-      }
-      .post h2 {
-        font-size: 1.3rem; /* Reduced font size */
-        color: #007bff;
-        margin-bottom: 8px; /* Reduced margin */
-      }
-      .post p {
-        font-size: 1rem;
-        color: #555;
-      }
-      footer {
-        background-color: #800000; /* Dark maroon */
-        color: #ffffff; /* Ensure text is readable */
-        padding: 20px;
-        text-align: center;
-      }
-      footer ul {
-        list-style: none; /* Remove default list styling */
-        padding: 0;
-        margin: 10px 0 0;
-        text-align: center; /* Center-align the list */
-      }
-      footer ul li a {
-        color: #ffffff;
-        text-decoration: none;
-        font-weight: normal; /* Unbold the text */
-        font-size: 0.8rem; /* Further reduce font size */
-      }
-      footer ul li {
-        font-size: 0.8rem; /* Further reduce font size for non-link items */
-        margin-bottom: 5px; /* Add spacing between list items */
-      }
-      @media (max-width: 480px) {
-        footer ul li a {
-          font-size: 0.8rem; /* Further reduce font size for very small screens */
-        }
-        footer ul li {
-          font-size: 0.8rem; /* Further reduce font size for non-link items */
-        }
-      }
-      h1 + p,
-      h2 + p {
-        text-align: center; /* Center align paragraphs under h1 and h2 */
-      }
-    </style>
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
   </head>
   <body>
-    <div class="container">
-      <h1>My Blog</h1>
-      <div class="post">
-        <h2>Exploring AI in Financial Risk Management</h2>
+    <header class="blog-header">
+      <div class="hero-banner">
+        <h1>Welcome to My Blog</h1>
+        <p class="tagline">Stories, Skills, and Curiosity in Motion</p>
+        <a href="index.html" class="cta-button">← Back to Portfolio</a>
+      </div>
+    </header>
+
+    <section class="blog-introduction">
+      <div class="container">
+        <h2>Where Thoughts Learn to Breathe</h2>
         <p>
-          Artificial Intelligence is transforming the way we approach financial
-          risk management. In this post, I explore how AI can be leveraged to
-          detect fraud, predict risks, and optimize financial operations.
+          Welcome to my little corner of the internet—where wandering thoughts
+          occasionally land a point, and ideas come up for air. <br />Here, I
+          jot down what it’s like to shift from finance to tech, to learn code
+          after spreadsheets, and to explore how AI might just out-analyze your
+          favorite auditor. <br />Whether I’m untangling fraud detection models,
+          reflecting on career pivots, or stumbling through JavaScript with
+          grace (or grit), this blog is where my thoughts find their footing.
+          <br />Karibu!
         </p>
       </div>
-      <div class="post">
-        <h2>The Future of Full-Stack Development</h2>
-        <p>
-          Full-stack development is evolving rapidly. This post discusses the
-          latest trends, tools, and technologies that are shaping the future of
-          web development.
-        </p>
+    </section>
+
+    <main class="blog-container">
+      <!-- Navigation Buttons -->
+      <div class="blog-navigation">
+        <a href="#career-journey">Career Journey</a>
+        <a href="#finance-compliance">Finance & Compliance</a>
+        <a href="#learning-to-code">Learning to Code</a>
+        <a href="#ai-in-finance">AI in Finance</a>
       </div>
-    </div>
-    <footer>
-      <p>© 2025 [Felix Okeyo]. All rights reserved.</p>
-      <ul>
-        <li>
-          <a href="https://linkedin.com/in/felix-okeyo/" target="_blank">
-            <i class="fab fa-linkedin"></i> LinkedIn
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/felixokeyo" target="_blank">
-            <i class="fab fa-github"></i> GitHub
-          </a>
-        </li>
-        <li>
-          <a href="mailto:felix.okeyo254@gmail.com">
-            <i class="fas fa-envelope"></i> felix.okeyo254@gmail.com
-          </a>
-        </li>
-        <li><i class="fas fa-phone"></i> +254 724 344344</li>
-        <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
-      </ul>
+
+      <!-- Category: Career Journey -->
+      <section id="career-journey" class="blog-category">
+        <h2>Career Journey</h2>
+        <article class="post-card">
+          <h3>Welcome to the Curiously Breezy Side of Things</h3>
+          <p class="preview">
+            From spreadsheet battles to a blinking cursor of newsletter dread.
+            Discover the unexpected origins of this blog...
+          </p>
+          <p>
+            There was a time—a couple of years back—when I found myself breaking
+            into a polite panic over an empty Word document, a blinking cursor
+            mocking me in rhythm. I wasn’t writing code or crafting blog posts
+            back then. <br />I was writing a newsletter—yes, one of those email
+            missives meant to inform, inspire, and occasionally sweet-talk you
+            into showing up at one of our trainings. <br /><br />
+            It was called the "KARDS Newsletter", and it was my first real foray
+            into public writing. I didn’t have a journalism degree. I wasn’t a
+            communications officer. I was a youthful Finance and Admin Assistant
+            with a spreadsheet in one hand and a deadline in the other. My
+            official job was budgets, logistics, and documents—but somehow, I
+            volunteered (or was gently cornered) into running a bi-monthly
+            bulletin that later morphed into a monthly feature.
+            <br />
+            It targeted community development practitioners and grassroots
+            organizations—the kind of folk doing hard work in hard places, often
+            with little thanks. People I admired. Which made it worse. Because
+            every time I sat down to draft an issue, I felt like a fraud trying
+            to speak to giants. <br />The pressure to sound “professional” and
+            “informed” while also being timely and relevant… well, let’s just
+            say, imposter syndrome and I became very close. I’d start with ideas
+            that felt strong, then second-guess every sentence. <br />I'd
+            wrestle with tone. Should I be formal? Warm? Data-heavy? Light and
+            chatty? <br />Sometimes, I’d panic-write entire paragraphs that felt
+            more like internal memos than community updates. Other times, I
+            missed the soft editorial deadline because I was knee-deep in an
+            audit file or chasing a procurement form that had mysteriously
+            vanished between departments. <br /><br />
+            But you know what? I learned.<br />
+            I learned how to coax ideas out of thin air and package them into
+            digestible stories. I learned how to listen—really listen—to what
+            field officers, coordinators, and beneficiaries were saying during
+            check-ins, then weave those insights into something others could
+            read and nod at. I learned how to breathe life into statistics, how
+            to ask better questions, and most of all, how to hit “Send” even
+            when I wasn’t sure if it was good enough. <br /><br />
+            That humble little newsletter gave me my first glimpse into the
+            power of writing with purpose. It wasn’t about being perfect—it was
+            about showing up. And now, many years later, I find myself doing
+            that again, but on my own terms.
+            <br /><br />
+            Welcome to this blog—the curiously breezy side of my journey.
+            <br /><br />
+            Here, I’m letting go of the pressure to sound like I have all the
+            answers. I’m trading the polished newsletter tone for something a
+            little more human. A space where I can reflect, explore, and
+            sometimes ramble about the intersection of finance, technology,
+            creativity, and life in motion. A place where I can ask the
+            questions I used to bury under meeting minutes and grant reports.
+            <br /><br />
+            If you’ve ever felt like a beginner in your own story—whether in a
+            new role, a new field, or a new version of yourself—then pull up a
+            chair. I’ve been there. I still am.
+            <br /><br />
+            This blog is for the curious. For the brave. For the quietly
+            ambitious and the not-so-sure. It’s a continuation of a journey that
+            began with grassroots voices and formatting battles in MS Publisher.
+            And it’s just getting interesting.
+            <br /><br />
+            So… karibu. Let’s keep this breeze moving.
+          </p>
+        </article>
+        <article class="post-card">
+          <h3>From Compliance to Code</h3>
+          <p class="preview">
+            A curious detour through Finance, Donors, and Dreams...
+          </p>
+          <p>
+            Let me tell you a secret: the life of a traditional finance
+            professional in a donor-funded organization is not as quiet as the
+            spreadsheet might suggest.
+            <br /><br />
+            In fact, it's a chaotic dance between deadlines and documentation.
+            One moment you're reconciling the petty cash ledger, and the next,
+            you're responding to a donor query from three months ago about why a
+            payment voucher is missing a signature. It sounds mundane until you
+            realize that these documents—hard or soft copy, scanned in
+            triplicate, sometimes even notarized—are the bread and butter of
+            continued funding.
+            <br /><br />
+            I spent years in these trenches.
+            <br /><br />
+            ________________________________________
+            <br /><br />
+            <strong>The World of Multi-Donor Projects</strong>
+            <br />
+            Working with multi-donor funded organizations meant living in
+            audit-mode by default. Supporting documentation wasn’t just
+            “important”—it was gospel. Every payment, whether for salaries,
+            travel, or training refreshments, needed proof. Timesheets.
+            Receipts. Quotations. Signed approvals. And when those weren't
+            airtight, the dreaded review queries would land. Monthly.
+            <br /><br />
+            Payroll wasn’t a simple disbursement—it was a careful choreography
+            of statutory deductions (PAYE, NHIF/SHIF, NSSF), approvals, tax
+            submissions, and reconciliations. Burn-rate calculations needed to
+            be up-to-date to inform budget variance analyses and donor
+            reporting. The dreaded underspending or overspending alerts? Yes,
+            those too.
+            <br /><br />
+            Procurement wasn’t a run to the shop. It was a process—soliciting
+            three quotes, reviewing for fairness, evaluating against policy,
+            justifying selections. All while ensuring internal controls weren’t
+            just “in place,” but actively respected. You learned to implement
+            policy, but also tweak it when reality punched.
+            <br /><br />
+            And then came HR. Reviewing timesheets, approving leave, supporting
+            staff travel, and sorting accommodation logistics for visiting
+            consultants or program beneficiaries. Sometimes you'd find yourself
+            managing the company car logbook in the morning and answering a
+            finance policy query by lunch.
+            <br /><br />
+            It was everything, everywhere, all at once.
+            <br /><br />
+            But within that intensity, there was growth. You became a
+            cross-functional operator. You led when needed, adapted when
+            required, and met your update meetings with a mix of exhaustion and
+            pride. You learned how organizations actually breathe. You saw how
+            leadership isn’t just in the title—it’s in keeping the engine
+            running behind the scenes.
+            <br /><br />
+            ________________________________________
+            <br /><br />
+            <strong
+              >Shifting Gears: Welcome to Construction and Commerce</strong
+            >
+            <br />
+            When I moved into commercial enterprises—specifically construction
+            and engineering—the world tilted.
+            <br /><br />
+            Gone were donor frameworks and burn-rates. Here, the goal was
+            profitability. Every decision had a price tag, and that tag had to
+            be justified through a business lens, not a development one.
+            <br /><br />
+            Tax obligations evolved—suddenly, VAT returns and withholding tax
+            compliance took center stage. Ownership structures became more
+            concentrated. Approvals were faster, but the pressure to deliver was
+            tighter. Donor goodwill was replaced by investor/owner
+            expectations.<br />
+            You didn’t have quarterly review meetings—you had directors asking
+            why the site delayed delivery by a day and what it meant for
+            cashflow.
+            <br /><br />
+            And yet, my donor-funded background helped. My processes were
+            airtight. My compliance game strong. My ability to handle audits,
+            deadlines, and documentation gave me an edge. What they needed was
+            order. What I had was just that—seasoned, stress-tested, and
+            systems-oriented.
+            <br /><br />
+            ________________________________________
+            <br /><br />
+            <strong>Now Entering: Tech Territory</strong>
+            <br />
+            Then came a deeper nudge. A feeling. A shift.
+            <br /><br />
+            The world was changing. Digital transformation wasn’t just a
+            buzzword anymore—it was the new minimum. And I knew that if I wanted
+            to future-proof my career, I couldn’t sit in yesterday’s tools while
+            tomorrow’s tech left me behind.
+            <br /><br />
+            So here I am. A finance and administration professional, knee-deep
+            in HTML and Python, teaching myself how to build AI-powered
+            financial tools while figuring out how to pay the bills in the
+            meantime.
+            <br /><br />
+            And it’s terrifying.
+            <br /><br />
+            Not because the tech world is unkind—but because the terrain is
+            unfamiliar. I don’t have a Computer Science degree. I don’t speak
+            “backend” fluently yet. And transitioning as an older professional,
+            especially when the job market is flooded with younger, tech-native
+            talent, can feel like starting from scratch in a language you’re
+            still learning to pronounce.
+            <br /><br />
+            It’s even harder when you add context: USAID and other donor fund
+            cuts mean fewer opportunities in the non-profit sector, more
+            competition, and tighter belts across the board. Many of us with
+            years of experience are now fishing in the same small pond,
+            wondering if it’s time to switch lakes altogether.
+            <br /><br />
+            But here’s the thing: while I may not be “tech-born,” I’m
+            problem-tested. I bring years of financial insight, organizational
+            discipline, and compliance-driven thinking—things even the best
+            developers sometimes overlook. I’m not here to replace the coder—I’m
+            here to complement them, to bring structure, financial management
+            and understanding into a world full of innovation but sometimes
+            short on operational grounding.
+            <br /><br />
+            ________________________________________
+            <br /><br />
+            <strong>So, Why This Story?</strong>
+            <br />
+            Because somewhere out there is someone like me—maybe mid-career,
+            maybe at a crossroads—wondering if it’s too late to pivot, to learn,
+            to explore. It’s not. The trick is to let your past become your
+            springboard, not your ceiling.
+            <br /><br />
+            Finance taught me about systems. Donors taught me about
+            accountability. Construction taught me about performance. And now,
+            tech is teaching me about reinvention.
+            <br /><br />
+            We don’t need to abandon our history. We just need to remix it for
+            the future.
+            <br /><br />
+            I hope this piece reminded you that growth isn’t linear. It’s
+            layered.
+          </p>
+          <a href="#" class="read-more">Read more</a>
+        </article>
+      </section>
+
+      <!-- Category: Finance & Compliance -->
+      <section id="finance-compliance" class="blog-category">
+        <h2>Finance & Compliance</h2>
+        <article class="post-card">
+          <h3>The Art of Documentation</h3>
+          <p class="preview">
+            Why process documentation and audit trails still matter...
+          </p>
+          <a href="#" class="read-more">Read more</a>
+        </article>
+      </section>
+
+      <!-- Category: Learning to Code -->
+      <section id="learning-to-code" class="blog-category">
+        <h2>Learning to Code</h2>
+        <article class="post-card">
+          <h3>Welcome to the Curiously Breezy Side of Things</h3>
+          <p class="preview">
+            My not-so-perfect but wonderfully personal plunge into blogging...
+          </p>
+          <a href="#" class="read-more">Read more</a>
+        </article>
+      </section>
+
+      <!-- Category: AI in Finance -->
+      <section id="ai-in-finance" class="blog-category">
+        <h2>AI in Finance</h2>
+        <article class="post-card">
+          <h3>Exploring AI in Financial Risk Management</h3>
+          <p class="preview">
+            How machine learning is reshaping how we detect and deter risk.
+          </p>
+          <a href="#" class="read-more">Read more</a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="blog-footer">
+      <p>© 2025 Felix Okeyo. All rights reserved.</p>
+      <div class="navigation-buttons">
+        <a href="index.html" class="nav-button">Home</a>
+        <a href="cv.html" class="nav-button">CV</a>
+        <a href="contact.html" class="nav-button">Contact</a>
+      </div>
+      <div class="contact-details">
+        <p>
+          Email:
+          <a href="mailto:felix.okeyo254@gmail.com">felix.okeyo254@gmail.com</a>
+        </p>
+        <p>Phone: +254 724 344344</p>
+        <p>Location: Nairobi, Kenya</p>
+      </div>
+      <a href="#top" class="back-to-top">Back to Top</a>
     </footer>
+
+    <style>
+      .navigation-buttons {
+        margin-top: 15px;
+        text-align: center;
+      }
+
+      .nav-button {
+        display: inline-block;
+        background-color: #007bff; /* Theme primary color */
+        color: #ffffff;
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: 600;
+        margin: 5px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+
+      .nav-button:hover {
+        background-color: #0056b3; /* Theme hover color */
+        transform: translateY(-3px);
+      }
+
+      .blog-introduction {
+        background-color: #f9f9f9;
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .blog-introduction h2 {
+        font-size: 1.8rem;
+        color: #007bff;
+        margin-bottom: 10px;
+      }
+
+      .blog-introduction p {
+        font-size: 1rem;
+        color: #555;
+        line-height: 1.6;
+      }
+
+      .blog-introduction p,
+      .post-card p {
+        font-size: 0.9rem; /* Reduced font size for better visibility */
+        line-height: 1.5; /* Maintain good readability */
+      }
+
+      h3 {
+        margin-top: 30px; /* Add spacing above headings */
+        padding-top: 10px; /* Add padding for better separation */
+        border-top: 2px solid #800000; /* Add a maroon border for distinction */
+      }
+
+      .blog-navigation {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap; /* Ensure buttons wrap on smaller screens */
+        gap: 10px; /* Add spacing between buttons */
+        margin: 20px 0; /* Add spacing above and below the navigation */
+      }
+
+      .blog-navigation a {
+        display: inline-block;
+        background-color: #800000; /* Dark maroon theme color */
+        color: #ffffff; /* White text for contrast */
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 0.9rem;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+
+      .blog-navigation a:hover {
+        background-color: #660000; /* Slightly darker maroon on hover */
+        transform: translateY(-3px); /* Add a hover effect */
+      }
+
+      .back-to-top {
+        display: inline-block;
+        background-color: #333333; /* Dark grey background */
+        color: #ffffff; /* White text for contrast */
+        text-decoration: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: 600;
+        font-size: 0.9rem;
+        margin-top: 15px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+      }
+
+      .back-to-top:hover {
+        background-color: #555555; /* Slightly lighter grey on hover */
+        transform: translateY(-3px); /* Add a hover effect */
+      }
+
+      .contact-details {
+        text-align: center;
+        margin-top: 15px;
+        font-size: 0.9rem;
+        color: #555; /* Subtle text color */
+      }
+
+      .contact-details a {
+        color: #007bff; /* Link color */
+        text-decoration: none;
+      }
+
+      .contact-details a:hover {
+        text-decoration: underline; /* Underline on hover */
+      }
+
+      .blog-header h1 {
+        font-size: 1.8rem; /* Reduced font size for the header title */
+        margin-bottom: 10px;
+      }
+
+      .blog-header .tagline {
+        font-size: 1rem; /* Reduced font size for the tagline */
+        margin-bottom: 15px;
+      }
+
+      .cta-button {
+        font-size: 0.9rem; /* Reduced font size for the button */
+        padding: 8px 16px; /* Adjusted padding for smaller size */
+      }
+
+      .blog-introduction h2 {
+        font-size: 1.5rem; /* Reduced font size for the introduction heading */
+        margin-bottom: 10px;
+      }
+
+      .blog-introduction p {
+        font-size: 0.9rem; /* Reduced font size for the introduction paragraph */
+        line-height: 1.4; /* Adjusted line height for readability */
+      }
+
+      .post-card {
+        background-color: #f9f9f9; /* Light background for the card */
+        border: 1px solid #ddd; /* Subtle border for separation */
+        border-radius: 8px; /* Rounded corners */
+        padding: 20px;
+        margin-bottom: 20px; /* Space between cards */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+      }
+
+      .post-card h3 {
+        font-size: 1.2rem; /* Adjust heading size */
+        margin-bottom: 10px;
+        color: #333; /* Darker text for contrast */
+      }
+
+      .post-card p {
+        font-size: 0.9rem; /* Adjust paragraph size */
+        line-height: 1.5; /* Improve readability */
+        color: #555; /* Subtle text color */
+      }
+
+      .blog-category h2 {
+        color: #007bff; /* Blue color aligned to the theme */
+      }
+
+      .hero-banner {
+        background-image: url("images/blog_images/stories_matter.jpg"); /* Updated path to the specified image */
+        background-size: cover; /* Ensure the image covers the entire section */
+        background-position: center; /* Center the image */
+        color: #ffffff; /* White text for contrast */
+        text-align: center;
+        padding: 50px 20px; /* Add padding for spacing */
+        border-radius: 8px; /* Optional: Add rounded corners */
+      }
+
+      .hero-banner h1,
+      .hero-banner .tagline,
+      .hero-banner .cta-button {
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
+      }
+
+      .hero-banner h1 {
+        color: #ffcc00; /* Bright gold for contrast */
+        font-size: 2.5rem; /* Slightly larger font for emphasis */
+        font-weight: bold;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Add a bold shadow for depth */
+        margin-bottom: 10px;
+      }
+
+      .hero-banner .tagline {
+        color: #00ffcc; /* Bright teal for a creative contrast */
+        font-size: 1.2rem; /* Slightly larger tagline font */
+        font-style: italic; /* Add an artistic touch */
+        text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Subtle shadow for readability */
+        margin-bottom: 20px;
+      }
+    </style>
   </body>
 </html>
