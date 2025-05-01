@@ -56,7 +56,7 @@
         color: #333;
       }
       .project-card p {
-        font-size: 1rem;
+        font-size: 0.9rem;
         color: #ffffff; /* Set description text color to white */
         margin-bottom: 15px;
       }
@@ -237,7 +237,7 @@
         text-align: center;
       }
       #interests p {
-        font-size: 1rem;
+        font-size: 0.9rem;
         color: #555;
         text-align: center;
         line-height: 1.6;
@@ -388,6 +388,11 @@
     ></script>
   </head>
   <body>
+    <div id="top" style="height: 1px"></div>
+    <!-- Add this element for the "Back to Top" button -->
+    <!-- Add a dark mode toggle button -->
+    <button id="dark-mode-toggle" class="btn">Toggle Dark Mode</button>
+
     <!-- Hero Section -->
     <header id="hero">
       <div class="hero-content">
@@ -439,7 +444,7 @@
           With a strong foundation in Finance and Accounting, I have extensive
           experience in financial operations, compliance, and risk management
           across multiple sectors. I specialize in process optimization,
-          improving efficiency and reducing costs, while ensuring thorough
+          improving efficiency and cost control, while ensuring thorough
           documentation for streamlined workflows and compliance. Currently, I
           am expanding my expertise in full-stack development and machine
           learning, with a focus on AI-driven financial risk detection and fraud
@@ -491,12 +496,12 @@
         <h2>My Interests</h2>
         <p>
           I’m endlessly curious—especially where numbers, systems, and
-          creativity collide to reveal patterns, meaning, and possibility. I’m
-          passionate about finance, technology, and the powerful synergy they
-          offer in solving real-world problems. <br />Currently, I’m diving into
-          full-stack development, data analysis and machine learning, with a
-          long-term vision of building tech-driven financial solutions that are
-          both innovative and impactful. <br /><br />
+          creativity collide to reveal patterns, meaning, and possibility.
+          <br />I am passionate about finance, technology, and the powerful
+          synergy they offer in solving real-world problems. <br />Currently,
+          I’m diving into full-stack development, data analysis and machine
+          learning, with a long-term vision of building tech-driven financial
+          solutions that are both innovative and impactful. <br /><br />
           Beyond the screen and spreadsheets, I’ve rekindled a childhood spark
           for drawing and painting. It’s a humbling and nostalgic path of
           self-discovery—where imagination meets skill (and the occasional
@@ -515,7 +520,49 @@
     <!-- Projects Section -->
     <section id="projects">
       <h2>My Projects</h2>
+      <!-- Add a filter input for projects -->
+      <input
+        type="text"
+        id="project-filter"
+        placeholder="Search projects..."
+        style="margin-bottom: 15px; padding: 8px; width: 100%; max-width: 300px"
+      />
       <div class="container">
+        <div class="project-card">
+          <h3>Green School Initiative</h3>
+          <img
+            src="images/green_school_website.jpeg"
+            alt="Green School Initiative"
+          />
+          <p>
+            A web-based platform promoting sustainable practices in schools
+            through interactive tools and resources.
+          </p>
+          <a
+            href="https://github.com/felixokeyo/green-school-initiative"
+            target="_blank"
+          >
+            View Project
+          </a>
+        </div>
+        <div class="project-card">
+          <h3>PlayPoint</h3>
+          <img src="images/PlayPoint_Dashboard.png" alt="PlayPoint Project" />
+          <p>
+            PlayPoint is an all-in-one dynamic digital platform for sports
+            academies. <br />It integrates operations, coaching, payments,
+            facilities, and performance—on one smart dashboard. <br />The
+            platform is designed to streamline operations, enhance coaching, and
+            improve athlete performance through data-driven insights.
+
+            <br />It is a comprehensive solution for sports academies, coaches,
+            athletes, parents/guardians- providing a centralized hub for
+            managing all aspects of sports training and development.
+          </p>
+          <a href="https://github.com/felixokeyo/playpoint" target="_blank">
+            View Project
+          </a>
+        </div>
         <div class="project-card">
           <h3>Python Financial Automation</h3>
           <img
@@ -573,7 +620,11 @@
           I'm eager to hear about it. <br />Reach out and let's explore the
           possibilities.
         </p>
-        <form action="#" method="POST">
+        <form
+          action="mailto:felix.okeyo254@gmail.com"
+          method="POST"
+          enctype="text/plain"
+        >
           <label for="name">Your Name</label>
           <input type="text" id="name" name="name" required />
 
@@ -614,6 +665,8 @@
         <a href="#top" class="back-to-top">Back to Top</a>
       </div>
     </footer>
+    <!-- Add a script tag for JavaScript -->
+    <script src="scripts.js"></script>
     <script
       src="https://kit.fontawesome.com/a076d05399.js"
       crossorigin="anonymous"
