@@ -188,3 +188,27 @@ footer ul {
 footer ul li a {
     color: #fff;
 }
+
+/* Dark Mode Styles */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+body.dark-mode a {
+  color: #1e90ff;
+}
+body.dark-mode .project-card {
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+/* Animations */
+.hidden {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
