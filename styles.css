@@ -117,6 +117,15 @@ section h2 {
     background-color: #B24D3A;
 }
 
+#projects .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 15px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
 /* Call to Action Section */
 #cta {
     background-color: #9E2A2B;
@@ -211,4 +220,12 @@ body.dark-mode .project-card {
 .visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+#interests p {
+    text-align: justify;
+}
+
+#education p {
+    text-align: justify;
 }
